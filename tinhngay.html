@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoNgayTrongThang</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="month" placeholder="Nhập Tháng"/>
+        <button type="button" onclick="S();">Tính số ngày</button>
+        <p id="click"></p>
+    </form>
+    <script>
+        function S(){
+        let Month = Number(document.getElementById("month").value);
+         switch (Month) {
+            case 1:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+            case 2:
+             click=( "Tháng "+ Month+ " có 28 hoặc 29 ngày")
+             break;
+            case 3:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+            case 4:
+             click=( "Tháng "+ Month+ " có 30 ngày")
+             break;
+            case 5:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+            case 6:
+             click=( "Tháng "+ Month+ " có 30 ngày")
+             break;
+            case 7:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+            case 8:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+            case 9:
+             click=( "Tháng "+ Month+ " có 30 ngày")
+             break;
+            case 10:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+            case 11:
+             click=( "Tháng "+ Month+ " có 30 ngày")
+             break;
+            case 12:
+                click=( "Tháng "+ Month+ " có 31 ngày")
+                break;
+         }
+         document.getElementById("click").innerHTML=click}
+    </script>
+</body>
+</html>
