@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: auto;
+        }
+
+        button {
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        input {
+            padding: 15px 32px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>  
+    <h1>Game Đoán Số</h1>
+    <br>
+    <p>Đoán số từ 1 đến 10. Bạn có <span id="count">3</span> lần đoán</p>
+    <br>
+    <input type="number" id="number">
+
+    <button onclick="play()">Thử</button>
+
+     <script>
+        let a = parseInt( Math.floor(Math.random() * 11))
+        function play() {
+            let dem = document.getElementById("count").innerText;
+            let num = document.getElementById("number").value;
+            let count = document.getElementById("count").innerText = dem - 1;
+            if (a ==num) {
+                alert("Đúng");
+            } else {
+                alert("Sai");
+            if (count == 0) {
+                alert("Thua!");
+            }
+             
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
